@@ -1,1 +1,2322 @@
-test
+
+
+
+<!DOCTYPE html>
+<html lang="id-ID" amp="" transformed="self;v=1" i-amphtml-layout="" i-amphtml-no-boilerplate="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <link rel="preconnect" href="https://cdn.ampproject.org">
+    <style amp-runtime="" i-amphtml-version="012203281422000">
+        :root {
+            --white: #f9f9f9;
+            --black: #36383F;
+            --max-width: 1170px;
+            --j-h6: calc(12px + (16 - 12) * ((100vw - 360px) / (1920 - 360)));
+            --j-primary: #1c1a24;
+            --j-secondary: #1f252d;
+            --j-tertiary: rgba(255, 255, 255, 0.06);
+            --j-quartiary: #000;
+            --j-card-hover: rgba(255, 255, 255, 0.15);
+            --j-text: rgba(255, 255, 255, 0.8);
+            --j-link: rgba(255, 255, 255, 0.103);
+            --j-space: min(max(12px, 3.5vmin), 30px);
+            --j-space-s: min(max(8px, 2vmin), 20px);
+            --j-space-xs: min(max(4px, 1vmin), 10px);
+            --j-transition: 0.6s;
+            --j-white: white;
+            --j-radius: 8px;
+            --j-provider: rgba(255, 255, 255, 0.7)
+        }
+
+        html {
+            overflow-x: hidden !important
+        }
+
+        html.i-amphtml-fie {
+            height: 100% !important;
+            width: 100% !important
+        }
+
+        html:not([amp4ads]),
+        html:not([amp4ads]) body {
+            height: auto !important
+        }
+
+        html:not([amp4ads]) body {
+            margin: 0 !important
+        }
+
+        body {
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%
+        }
+
+        html.i-amphtml-singledoc.i-amphtml-embedded {
+            -ms-touch-action: pan-y pinch-zoom;
+            touch-action: pan-y pinch-zoom
+        }
+
+        html.i-amphtml-fie>body,
+        html.i-amphtml-singledoc>body {
+            overflow: visible !important
+        }
+
+        html.i-amphtml-fie:not(.i-amphtml-inabox)>body,
+        html.i-amphtml-singledoc:not(.i-amphtml-inabox)>body {
+            position: relative !important
+        }
+
+        html.i-amphtml-ios-embed-legacy>body {
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+            position: absolute !important
+        }
+
+        html.i-amphtml-ios-embed {
+            overflow-y: auto !important;
+            position: static
+        }
+
+        #i-amphtml-wrapper {
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            margin: 0 !important;
+            display: block !important
+        }
+
+        html.i-amphtml-ios-embed.i-amphtml-ios-overscroll,
+        html.i-amphtml-ios-embed.i-amphtml-ios-overscroll>#i-amphtml-wrapper {
+            -webkit-overflow-scrolling: touch !important
+        }
+
+        #i-amphtml-wrapper>body {
+            position: relative !important;
+            border-top: 1px solid transparent !important
+        }
+
+        #i-amphtml-wrapper+body {
+            visibility: visible
+        }
+
+        #i-amphtml-wrapper+body .i-amphtml-lightbox-element,
+        #i-amphtml-wrapper+body[i-amphtml-lightbox] {
+            visibility: hidden
+        }
+
+        #i-amphtml-wrapper+body[i-amphtml-lightbox] .i-amphtml-lightbox-element {
+            visibility: visible
+        }
+
+        #i-amphtml-wrapper.i-amphtml-scroll-disabled,
+        .i-amphtml-scroll-disabled {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important
+        }
+
+        amp-instagram {
+            padding: 54px 0 0 !important;
+            background-color: #fff
+        }
+
+        amp-iframe iframe {
+            box-sizing: border-box !important
+        }
+
+        [amp-access][amp-access-hide] {
+            display: none
+        }
+
+        [subscriptions-dialog],
+        body:not(.i-amphtml-subs-ready) [subscriptions-action],
+        body:not(.i-amphtml-subs-ready) [subscriptions-section] {
+            display: none !important
+        }
+
+        amp-experiment,
+        amp-live-list>[update] {
+            display: none
+        }
+
+        amp-list[resizable-children]>.i-amphtml-loading-container.amp-hidden {
+            display: none !important
+        }
+
+        amp-list [fetch-error],
+        amp-list[load-more] [load-more-button],
+        amp-list[load-more] [load-more-end],
+        amp-list[load-more] [load-more-failed],
+        amp-list[load-more] [load-more-loading] {
+            display: none
+        }
+
+        amp-list[diffable] div[role=list] {
+            display: block
+        }
+
+        amp-story-page,
+        amp-story[standalone] {
+            min-height: 1px !important;
+            display: block !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            width: 100% !important
+        }
+
+        amp-story[standalone] {
+            background-color: #000 !important;
+            position: relative !important
+        }
+
+        amp-story-page {
+            background-color: #757575
+        }
+
+        amp-story .amp-active>div,
+        amp-story .i-amphtml-loader-background {
+            display: none !important
+        }
+
+        amp-story-page:not(:first-of-type):not([distance]):not([active]) {
+            transform: translateY(1000vh) !important
+        }
+
+        amp-autocomplete {
+            position: relative !important;
+            display: inline-block !important
+        }
+
+        amp-autocomplete>input,
+        amp-autocomplete>textarea {
+            padding: .5rem;
+            border: 1px solid rgba(0, 0, 0, .33)
+        }
+
+        .i-amphtml-autocomplete-results,
+        amp-autocomplete>input,
+        amp-autocomplete>textarea {
+            font-size: 1rem;
+            line-height: 1.5rem
+        }
+
+        [amp-fx^=fly-in] {
+            visibility: hidden
+        }
+
+        amp-script[nodom],
+        amp-script[sandboxed] {
+            position: fixed !important;
+            top: 0 !important;
+            width: 1px !important;
+            height: 1px !important;
+            overflow: hidden !important;
+            visibility: hidden
+        }
+
+        [hidden] {
+            display: none !important
+        }
+
+        .i-amphtml-element {
+            display: inline-block
+        }
+
+        .i-amphtml-blurry-placeholder {
+            transition: opacity .3s cubic-bezier(0, 0, .2, 1) !important;
+            pointer-events: none
+        }
+
+        [layout=nodisplay]:not(.i-amphtml-element) {
+            display: none !important
+        }
+
+        .i-amphtml-layout-fixed,
+        [layout=fixed][width][height]:not(.i-amphtml-layout-fixed) {
+            display: inline-block;
+            position: relative
+        }
+
+        .i-amphtml-layout-responsive,
+        [layout=responsive][width][height]:not(.i-amphtml-layout-responsive),
+        [width][height][heights]:not([layout]):not(.i-amphtml-layout-responsive),
+        [width][height][sizes]:not(img):not([layout]):not(.i-amphtml-layout-responsive) {
+            display: block;
+            position: relative
+        }
+
+        .i-amphtml-layout-intrinsic,
+        [layout=intrinsic][width][height]:not(.i-amphtml-layout-intrinsic) {
+            display: inline-block;
+            position: relative;
+            max-width: 100%
+        }
+
+        .i-amphtml-layout-intrinsic .i-amphtml-sizer {
+            max-width: 100%
+        }
+
+        .i-amphtml-intrinsic-sizer {
+            max-width: 100%;
+            display: block !important
+        }
+
+        .i-amphtml-layout-container,
+        .i-amphtml-layout-fixed-height,
+        [layout=container],
+        [layout=fixed-height][height]:not(.i-amphtml-layout-fixed-height) {
+            display: block;
+            position: relative
+        }
+
+        .i-amphtml-layout-fill,
+        .i-amphtml-layout-fill.i-amphtml-notbuilt,
+        [layout=fill]:not(.i-amphtml-layout-fill),
+        body noscript>* {
+            display: block;
+            overflow: hidden !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0
+        }
+
+        body noscript>* {
+            position: absolute !important;
+            width: 100%;
+            height: 100%;
+            z-index: 2
+        }
+
+        body noscript {
+            display: inline !important
+        }
+
+        .i-amphtml-layout-flex-item,
+        [layout=flex-item]:not(.i-amphtml-layout-flex-item) {
+            display: block;
+            position: relative;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto
+        }
+
+        .i-amphtml-layout-fluid {
+            position: relative
+        }
+
+        .i-amphtml-layout-size-defined {
+            overflow: hidden !important
+        }
+
+        .i-amphtml-layout-awaiting-size {
+            position: absolute !important;
+            top: auto !important;
+            bottom: auto !important
+        }
+
+        i-amphtml-sizer {
+            display: block !important
+        }
+
+        @supports (aspect-ratio:1/1) {
+            i-amphtml-sizer.i-amphtml-disable-ar {
+                display: none !important
+            }
+        }
+
+        .i-amphtml-blurry-placeholder,
+        .i-amphtml-fill-content {
+            display: block;
+            height: 0;
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            width: 0;
+            margin: auto
+        }
+
+        .i-amphtml-layout-size-defined .i-amphtml-fill-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0
+        }
+
+        .i-amphtml-replaced-content,
+        .i-amphtml-screen-reader {
+            padding: 0 !important;
+            border: none !important
+        }
+
+        .i-amphtml-screen-reader {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 4px !important;
+            height: 4px !important;
+            opacity: 0 !important;
+            overflow: hidden !important;
+            margin: 0 !important;
+            display: block !important;
+            visibility: visible !important
+        }
+
+        .i-amphtml-screen-reader~.i-amphtml-screen-reader {
+            left: 8px !important
+        }
+
+        .i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader {
+            left: 12px !important
+        }
+
+        .i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader {
+            left: 16px !important
+        }
+
+        .i-amphtml-unresolved {
+            position: relative;
+            overflow: hidden !important
+        }
+
+        .i-amphtml-select-disabled {
+            -webkit-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important
+        }
+
+        .i-amphtml-notbuilt,
+        [layout]:not(.i-amphtml-element),
+        [width][height][heights]:not([layout]):not(.i-amphtml-element),
+        [width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+            position: relative;
+            overflow: hidden !important;
+            color: transparent !important
+        }
+
+        .i-amphtml-notbuilt:not(.i-amphtml-layout-container)>*,
+        [layout]:not([layout=container]):not(.i-amphtml-element)>*,
+        [width][height][heights]:not([layout]):not(.i-amphtml-element)>*,
+        [width][height][sizes]:not([layout]):not(.i-amphtml-element)>* {
+            display: none
+        }
+
+        amp-img:not(.i-amphtml-element)[i-amphtml-ssr]>img.i-amphtml-fill-content {
+            display: block
+        }
+
+        .i-amphtml-notbuilt:not(.i-amphtml-layout-container),
+        [layout]:not([layout=container]):not(.i-amphtml-element),
+        [width][height][heights]:not([layout]):not(.i-amphtml-element),
+        [width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element) {
+            color: transparent !important;
+            line-height: 0 !important
+        }
+
+        .i-amphtml-ghost {
+            visibility: hidden !important
+        }
+
+        .i-amphtml-element>[placeholder],
+        [layout]:not(.i-amphtml-element)>[placeholder],
+        [width][height][heights]:not([layout]):not(.i-amphtml-element)>[placeholder],
+        [width][height][sizes]:not([layout]):not(.i-amphtml-element)>[placeholder] {
+            display: block;
+            line-height: normal
+        }
+
+        .i-amphtml-element>[placeholder].amp-hidden,
+        .i-amphtml-element>[placeholder].hidden {
+            visibility: hidden
+        }
+
+        .i-amphtml-element:not(.amp-notsupported)>[fallback],
+        .i-amphtml-layout-container>[placeholder].amp-hidden,
+        .i-amphtml-layout-container>[placeholder].hidden {
+            display: none
+        }
+
+        .i-amphtml-layout-size-defined>[fallback],
+        .i-amphtml-layout-size-defined>[placeholder] {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            z-index: 1
+        }
+
+        amp-img[i-amphtml-ssr]:not(.i-amphtml-element)>[placeholder] {
+            z-index: auto
+        }
+
+        .i-amphtml-notbuilt>[placeholder] {
+            display: block !important
+        }
+
+        .i-amphtml-hidden-by-media-query {
+            display: none !important
+        }
+
+        .i-amphtml-element-error {
+            background: red !important;
+            color: #fff !important;
+            position: relative !important
+        }
+
+        .i-amphtml-element-error:before {
+            content: attr(error-message)
+        }
+
+        i-amp-scroll-container,
+        i-amphtml-scroll-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block
+        }
+
+        i-amp-scroll-container.amp-active,
+        i-amphtml-scroll-container.amp-active {
+            overflow: auto;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .i-amphtml-loading-container {
+            display: block !important;
+            pointer-events: none;
+            z-index: 1
+        }
+
+        .i-amphtml-notbuilt>.i-amphtml-loading-container {
+            display: block !important
+        }
+
+        .i-amphtml-loading-container.amp-hidden {
+            visibility: hidden
+        }
+
+        .i-amphtml-element>[overflow] {
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            visibility: hidden;
+            display: initial;
+            line-height: normal
+        }
+
+        .i-amphtml-layout-size-defined>[overflow] {
+            position: absolute
+        }
+
+        .i-amphtml-element>[overflow].amp-visible {
+            visibility: visible
+        }
+
+        template {
+            display: none !important
+        }
+
+        .amp-border-box,
+        .amp-border-box *,
+        .amp-border-box :after,
+        .amp-border-box :before {
+            box-sizing: border-box
+        }
+
+        amp-pixel {
+            display: none !important
+        }
+
+        amp-analytics,
+        amp-auto-ads,
+        amp-story-auto-ads {
+            position: fixed !important;
+            top: 0 !important;
+            width: 1px !important;
+            height: 1px !important;
+            overflow: hidden !important;
+            visibility: hidden
+        }
+
+        html.i-amphtml-fie>amp-analytics {
+            position: initial !important
+        }
+
+        [visible-when-invalid]:not(.visible),
+        form [submit-error],
+        form [submit-success],
+        form [submitting] {
+            display: none
+        }
+
+        amp-accordion {
+            display: block !important
+        }
+
+        @media (min-width:1px) {
+            :where(amp-accordion>section)>:first-child {
+                margin: 0;
+                background-color: #efefef;
+                padding-right: 20px;
+                border: 1px solid #dfdfdf
+            }
+
+            :where(amp-accordion>section)>:last-child {
+                margin: 0
+            }
+        }
+
+        amp-accordion>section {
+            float: none !important
+        }
+
+        amp-accordion>section>* {
+            float: none !important;
+            display: block !important;
+            overflow: hidden !important;
+            position: relative !important
+        }
+
+        amp-accordion,
+        amp-accordion>section {
+            margin: 0
+        }
+
+        amp-accordion:not(.i-amphtml-built)>section>:last-child {
+            display: none !important
+        }
+
+        amp-accordion:not(.i-amphtml-built)>section[expanded]>:last-child {
+            display: block !important
+        }
+    </style>
+    <meta name="description"
+        content="Ninjajago adalah situs slot gacor 2023 terpercaya gampang maxwin yang menyediakan beragam permainan slot resmi populer dan terlengkap seperti slot online">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="keywords"
+        content="ninjajago, slot 777, situs slot 777, situs slot ninjajago, slot gacor maxwin, slot online, provider slot online, slot gacor, slot88, pemain slot gacor, slot online ninjajago, agen slot 777, RTP slot 777, user id slot ninjajago, slot online 777, agen slot online 777, demo slot populer">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Ninjajago -">
+    
+    <meta property="og:title" content="Ninjajago ⚡ Slot Online Gacor Gampang Menang 2023 Terpercaya">
+    <meta property="og:description"
+        content="Ninjajago adalah situs slot gacor 2023 terpercaya gampang maxwin yang menyediakan beragam permainan slot resmi populer dan terlengkap seperti slot online">
+    <meta property="og:url" content="https://pelitanusantara.sch.id/">
+	  <meta name="distribution" content="global" />
+    <meta name="geo.placename" content="Indonesia" />
+    <meta name="author" content="Ninjajago" />
+    <meta name="publisher" content="Ninjajago" />
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:locale:alternate" content="en_US" />
+   <meta property="og:site_name" content="Ninjajago" />
+    <meta property="og:image" content="https://i.postimg.cc/s22Dv9Fc/gacor77-slot-online.webp" />
+    <meta property="og:image:alt" content="Ninjajago" />
+    <meta property="article:published_time" content="2022-02-02T16:48:52+00:00">
+    <meta property="article:modified_time" content="2022-04-15T17:50:20+00:00">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ninjajago ⚡ Slot Online Gacor Gampang Menang 2023 Terpercaya">
+    <meta name="twitter:description"
+        content="Ninjajago adalah situs slot gacor 2023 terpercaya gampang maxwin yang menyediakan beragam permainan slot resmi populer dan terlengkap seperti slot online">
+    <script async="" src="https://cdn.ampproject.org/v0.mjs" type="module" crossorigin="anonymous"></script>
+    <script async nomodule src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="O8QfheaGr_727_wBWoIeoHYd8Om9gy6_8sRCpS9n_Qg" />
+    <link href="https://i.postimg.cc/cCJNZYMf/favicon.png" rel="shortcut icon">
+    <link rel="preload" as="image"href="https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png">
+    <style amp-custom="">
+        @media screen {
+            html {
+                height: 100%;
+                font-size: 1em;
+                font-size: 100%;
+                line-height: 1.4;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                vertical-align: baseline
+            }
+
+            body {
+                margin: 0;
+                font-size: 17px;
+                line-height: 1.5;
+                letter-spacing: .1px;
+                color: #c3c3c3;
+                background: #000;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+            }
+
+            h1,
+            h2,
+            h3 {
+                line-height: 1.2;
+                margin: 15px 0px;
+                font-weight: 600
+            }
+
+            h1 {
+                font-size: 30px
+            }
+
+            h2 {
+                font-size: 27px
+            }
+
+            h3 {
+                font-size: 21px
+            }
+
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box
+            }
+
+            a {
+                text-decoration: none
+            }
+
+            a:hover {
+                color: #2b2002
+            }
+
+            div {
+                display: block;
+                overflow: hidden;
+                position: relative
+            }
+
+            h1,
+            h2,
+            h3,
+            .entry-title,
+            .copyright,
+            .copyright a {
+                color: #cc0000
+            }
+
+            a {
+                color: #ffffff
+            }
+
+            amp-img {
+                width: 100%;
+                height: auto
+            }
+
+            .entry-content ol li {
+                list-style: decimal;
+                padding: 5px 0px;
+                display: list-item;
+                float: none
+            }
+
+            .entry-title {
+                text-shadow: -1px 1px 0 #000, -1px 1px 0 #000;
+                text-transform: uppercase;
+                padding: 15px 0
+            }
+
+            .center {
+                text-align: center
+            }
+
+            .text-big {
+                font-size: 20px;
+                font-weight: 600
+            }
+
+            .header {
+                width: 100%;
+                z-index: 99;
+                height: 80px;
+                position: fixed;
+                background: #16192a;
+                border-bottom: 3px solid #2f9900
+            }
+
+            .site-logo {
+                left: 0;
+                right: 0;
+                width: 20%;
+                margin: 0 auto
+            }
+
+            .site-logo amp-img {
+                max-width: 235px;
+                display: block
+            }
+
+            .sticky {
+                height: 81px
+            }
+
+            .main {
+                background: #16192a
+            }
+
+            .main-slide amp-img {
+                border-radius: 9px
+            }
+
+            .main-slide {
+                padding: 10px 0
+            }
+
+            .container,
+            hr {
+                max-width: 1178px;
+                width: 100%;
+                margin: auto;
+                overflow: hidden
+            }
+
+            .row {
+                width: 100%;
+                height: 100%;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+            }
+
+            .col-sm-2 {
+                flex: 0 0 10%;
+                max-width: 10%;
+                margin: 6px;
+                justify-content: center;
+                align-content: center;
+                border-radius: 9px
+            }
+
+            .col-sm-2 svg {
+                color: #634829;
+                padding: 8px
+            }
+
+            .col-sm-12 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%
+            }
+
+            .menu-login-container {
+                margin-bottom: 15px
+            }
+
+            .login-nav {
+                padding: 0;
+                margin-top: 5px
+            }
+
+            .login-nav li {
+                display: inline-block;
+                width: 49.5%;
+                text-align: center;
+                border-radius: 5px
+            }
+
+            .login-nav li a {
+                color: #fff;
+                font-size: 18px;
+                padding: 9px 20px;
+                display: block;
+                text-transform: uppercase;
+                font-weight: bold
+            }
+
+            .games-nav li,
+            .features-nav li,
+            .contact-nav li,
+            .col-sm-2 {
+                border: 1px solid #bba15a
+            }
+
+            .games-nav li,
+            .features-nav li,
+            .contact-nav li,
+            .col-sm-2 {
+                background: radial-gradient(#fff9f1, #e4c5a6);
+                border-radius: 8px;
+                box-shadow: 0 0 20px 3px rgba(22, 25, 42, 0.623) inset;
+                border: 3px solid #d9caba;
+            }
+
+            .games-nav li,
+            .features-nav li {
+                display: inline-block;
+                width: 15.8%;
+                margin: 3px;
+                border-radius: 9px
+            }
+
+            .games-nav li a,
+            .features-nav li a,
+            .contact-nav li a {
+                padding: 10px 5px;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-weight: 600;
+                color: #634829
+            }
+
+            ul.contact-nav {
+                padding: 0;
+                text-transform: capitalize
+            }
+
+            .contact-nav {
+                margin: auto;
+                display: flex;
+                justify-content: center
+            }
+
+            .contact-nav li {
+                display: inline-block;
+                margin: 0px 3px;
+                text-align: left;
+                border-radius: 9px
+            }
+
+            .contact-nav li a {
+                padding: 15px 9px
+            }
+
+            .contact-nav .ico-menu {
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                background-size: 17px;
+                background-repeat: no-repeat
+            }
+
+            .contact-nav li i {
+                vertical-align: middle
+            }
+
+            .daftar {
+                background: #2f9900;
+                background-image: linear-gradient(270deg, #2f9900 48.44%, #cc0000 75.52%, #2f9900 100%);
+                background-repeat: no-repeat;
+                animation: bg-move linear 5s infinite
+            }
+
+            .daftar:hover,
+            .login:hover {
+                background: #2f9900
+            }
+
+            .login {
+                background: #cc0000
+            }
+
+            .features-nav li {
+                width: 11.6%
+            }
+
+            @-webkit-keyframes bg-move {
+                0% {
+                    background-position: -500px 0
+                }
+
+                100% {
+                    background-position: 1000px 0
+                }
+            }
+
+            @keyframes bg-move {
+                0% {
+                    background-position: -500px 0
+                }
+
+                100% {
+                    background-position: 1000px 0
+                }
+            }
+
+            ul,
+            ol {
+                list-style: none;
+                margin: 0;
+                padding: 5px 0px
+            }
+
+            ul.article {
+                list-style: circle;
+                padding: 5px 30px
+            }
+
+            .article li {
+                list-style: disc;
+                margin: 0px 35px
+            }
+
+            .article ol li {
+                list-style: decimal
+            }
+
+            hr {
+                border-top: 1px dotted #9e8643;
+                border-bottom: 0;
+                border-left: 0;
+                border-right: 0
+            }
+
+            .module {
+                padding: 0
+            }
+
+            .module-medium {
+                padding: 35px 0
+            }
+
+            .module-big {
+                padding: 50px 0
+            }
+
+            .main .row {
+                justify-content: center
+            }
+
+            .footer {
+                width: 100%;
+                background: #000
+            }
+
+            .article {
+                padding: 17px 0px
+            }
+
+            .article .col-sm-12 {
+                padding: 12px
+            }
+
+            .article h1 {
+                text-align: center;
+                padding: 15px 0
+            }
+
+            .copyright,
+            .copyright a {
+                text-align: center;
+                font-size: 14px
+            }
+
+            .copyright .container {
+                padding: 12px 0px
+            }
+
+            .footer amp-img {
+                height: auto;
+                width: auto
+            }
+
+            .copyright a {
+                display: inline-block
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                .games-nav li a,
+                .features-nav li a {
+                    padding: 9px 0px;
+                    font-size: 12px
+                }
+
+                .games-nav li {
+                    width: 24.4%;
+                    margin: 5px auto
+                }
+
+                .games-nav li .ico-menu {
+                    background-size: 50px;
+                    width: 50px;
+                    height: 57px
+                }
+
+                .login-nav li {
+                    width: 49%
+                }
+
+                ul.games-nav,
+                ul.features-nav,
+                ul.contact-nav li {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center
+                }
+
+                .games-nav li,
+                .features-nav li {
+                    width: 27%;
+                    margin: 9px
+                }
+
+                .contact-nav li a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column
+                }
+
+                .svg-menu {
+                    height: 35px;
+                    width: 35px;
+                    display: inline-block;
+                    background-size: 27px;
+                    background-repeat: no-repeat
+                }
+
+                .header {
+                    height: 61px
+                }
+
+                .sticky {
+                    height: 60px
+                }
+
+                .container .row {
+                    padding: 0 10px
+                }
+
+                .col-sm-2 {
+                    flex: 0 0 29.9%;
+                    max-width: 29.9%
+                }
+
+                .footer amp-img {
+                    width: 100%;
+                    height: auto
+                }
+
+                .footer .col-sm-2 {
+                    max-width: 21%;
+                    flex: 0 0 21%
+                }
+
+                .copyright,
+                .contact-nav li {
+                    text-align: center
+                }
+
+                .contact-nav {
+                    justify-content: center
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .site-logo {
+                    width: 50%;
+                    top: 0px
+                }
+
+                .site-logo amp-img {
+                    height: auto;
+                    width: 100%
+                }
+
+                .login-nav li a {
+                    padding: 10px 9px;
+                    font-size: 18px
+                }
+
+                .games-nav li,
+                .features-nav li,
+                .contact-nav li {
+                    width: 27%;
+                    margin: 9px
+                }
+            }
+        }
+
+        amp-img.amp-wp-enforced-sizes {
+            -o-object-fit: contain;
+            object-fit: contain
+        }
+
+        amp-img img,
+        amp-img noscript {
+            image-rendering: inherit;
+            -o-object-fit: inherit;
+            object-fit: inherit;
+            -o-object-position: inherit;
+            object-position: inherit
+        }
+
+        .contact-nav svg {
+            margin-bottom: 10px
+        }
+
+        .bca0 {
+            fill: currentColor
+        }
+
+        .bca2 {
+            fill: currentColor
+        }
+
+        .bca1 {
+            fill: currentColor;
+            fill-rule: nonzero
+        }
+
+        #news a {
+            color: #cc0000;
+            padding-bottom: 2px;
+            border-bottom: 2px solid #cc0000;
+        }
+
+        .fixed-footer {
+            position: fixed;
+            font-size: .75em;
+            text-transform: uppercase;
+            font-weight: 700;
+            background: linear-gradient(#660000 5%, #cc0000 12%, #660000 88%, #277f00 95%);
+            border-top: 4px solid #660000;
+            color: #000;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            display: flex;
+            padding-bottom: 5px;
+            justify-content: space-around;
+        }
+
+        .fixed-footer a {
+            flex-basis: calc((100% - 15px*6)/ 5);
+            color: inherit;
+            font-size: 1em;
+            text-align: center;
+            padding: 5px 0;
+            background-color: inherit;
+        }
+
+        .antw {
+            background: #1a212a;
+            position: relative;
+            padding: 55px var(--j-space) 35px var(--j-space)
+        }
+
+        .antw::before {
+            content: 'Jawaban';
+            font-weight: 700;
+            background: #700905;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: var(--j-space-xs) var(--j-space-s)
+        }
+
+        .menu-scroll {
+            background-color: #16192a;
+            border-left: 3px solid #2f9900
+        }
+
+        .menu-subitem {
+            border-bottom: solid 1px rgba(255, 255, 255, .1);
+            position: relative
+        }
+
+        .active-item em {
+            background-color: #2ecc71
+        }
+
+        .active-item strong {
+            color: #fff
+        }
+
+        .active-item i:first-child {
+            color: #a0d468
+        }
+
+        .menu-subitem span {
+            color: #fff;
+            letter-spacing: .5px
+        }
+
+        .menu-subitem svg {
+            position: absolute;
+            left: 16.5px;
+            top: 14.5px;
+            width: 24px;
+            height: 24px;
+            line-height: 55px;
+            text-align: center;
+            color: white;
+        }
+
+        .menu-subitem i:last-child {
+            color: #aaa
+        }
+
+        .toggle-menu-header {
+            color: #fff
+        }
+
+        input[id=toggle-menu]+label .l1,
+        input[id=toggle-menu]+label .l2,
+        input[id=toggle-menu]+label .l3 {
+            background-color: #fff
+        }
+
+        .submenu-item label {
+            color: #fff
+        }
+
+        input[data-submenu-items]+label:before {
+            color: #aaa
+        }
+
+        input[data-submenu-items]+label:before {
+            color: #fff
+        }
+
+        input[data-submenu-items]:checked+label:before {
+            color: #ed5565
+        }
+
+        .submenu-wrapper .menu-item .fa-angle-right {
+            color: #666
+        }
+
+        .submenu-wrapper a:last-child {
+            border-bottom: solid 1px rgba(255, 255, 255, .1)
+        }
+
+        .submenu-wrapper a {
+            color: #f1983b
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+            color: #fff
+        }
+
+        .sidebar-socials a {
+            border-right: solid 1px rgba(255, 255, 255, .1);
+            border-bottom: solid 1px rgba(255, 255, 255, .1);
+            color: #fff
+        }
+
+        .sidebar-copyright {
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            margin-top: 40px;
+            display: block
+        }
+
+        .sidebar-logo-text {
+            color: rgba(255, 255, 255, .5);
+            border-bottom: solid 1px rgba(255, 255, 255, .1)
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, .8);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0
+        }
+
+        .icon-list {
+            list-style: inside;
+            font-size: 14px;
+            line-height: 28px;
+            color: #666
+        }
+
+        .icon-list i {
+            width: 30px
+        }
+
+        .center-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            border: solid 1px rgba(0, 0, 0, .5);
+            text-align: center;
+            line-height: 80px;
+            font-size: 24px;
+            margin: 0 auto 30px auto;
+            display: block
+        }
+
+        .j-menu * {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none
+        }
+
+        .menu-sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            width: 300px;
+            transform: translateX(300px);
+            transition: all 350ms ease
+        }
+
+        .page-content {
+            background-color: #400000;
+            transition: all 350ms ease;
+            max-width: 640px;
+            margin: 0 auto
+        }
+
+        .menu a:first-child {
+            margin-top: 0
+        }
+
+        .menu-scroll {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: scroll;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .menu-scroll::-webkit-scrollbar {
+            width: 0
+        }
+
+        input[data-submenu-items] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px
+        }
+
+        input[id=toggle-menu]:checked~#menu-sidebar {
+            box-shadow: 5px 0 10px 1px rgba(0, 0, 0, .2);
+            transform: translateX(0);
+            transition: all 350ms ease
+        }
+
+        input[id=toggle-menu]:checked~.page-content {
+            transform: translateX(260px);
+            transition: all 350ms ease
+        }
+
+        .menu-subitem {
+            height: 55px;
+            line-height: 55px;
+            display: block;
+            padding-left: 55px;
+            font-weight: 700;
+            cursor: pointer
+        }
+
+        .menu-subitem i {
+            position: absolute;
+            height: 55px;
+            width: 55px;
+            line-height: 55px;
+            text-align: center
+        }
+
+        .active-item em {
+            font-size: 8px;
+            text-align: center;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            right: 25px;
+            border-radius: 7px;
+            top: 50%;
+            margin-top: -2px
+        }
+
+        .active-item strong {
+            font-weight: 400
+        }
+
+        .active-item .fa-circle {
+            display: none
+        }
+
+        .active-item span {
+            margin-left: -3px
+        }
+
+        .active-item i:first-child {
+            margin-left: -3px
+        }
+
+        .toggle-menu-header {
+            height: 60px;
+            width: 50px;
+            line-height: 60px;
+            text-align: center;
+            top: 0;
+            z-index: 99999999;
+            position: fixed;
+            top: 0;
+            right: 0;
+            cursor: pointer
+        }
+
+        input[id=toggle-menu] {
+            display: none
+        }
+
+        input[id=toggle-menu]+label:before {
+            font-family: FontAwesome;
+            display: inline-block
+        }
+
+        input[id=toggle-menu]+label .l1,
+        input[id=toggle-menu]+label .l2,
+        input[id=toggle-menu]+label .l3 {
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            left: 50%;
+            margin-left: -10px;
+            transition: all 250ms ease
+        }
+
+        input[id=toggle-menu]+label .l1 {
+            margin-top: 28px
+        }
+
+        input[id=toggle-menu]+label .l2 {
+            margin-top: 34px
+        }
+
+        input[id=toggle-menu]+label .l3 {
+            margin-top: 40px
+        }
+
+        input[id=toggle-menu]:checked+label .l1 {
+            background-color: #f4b000;
+            transform: rotate(45deg);
+            margin-top: 30px;
+            transition: all 250ms ease
+        }
+
+        input[id=toggle-menu]:checked+label .l2 {
+            opacity: 0;
+            transition: all 250ms ease
+        }
+
+        input[id=toggle-menu]:checked+label .l3 {
+            background-color: #f4b000;
+            transform: rotate(-45deg);
+            margin-top: 30px;
+            transition: all 250ms ease
+        }
+
+        input[id=toggle-menu] {
+            display: none
+        }
+
+        input[id=toggle-menu]+label:before {
+            font-family: FontAwesome;
+            display: inline-block
+        }
+
+        .submenu-item label {
+            height: 55px;
+            cursor: pointer
+        }
+
+        input[class=toggle-submenu] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px
+        }
+
+        .submenu-wrapper {
+            height: 0;
+            overflow: hidden;
+            color: #fff;
+            transition: all 250ms ease
+        }
+
+        input[data-submenu-items] {
+            display: none
+        }
+
+        input[data-submenu-items]+label:before {
+            font-family: FontAwesome;
+            position: absolute;
+            right: 0;
+            height: 60px;
+            width: 55px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 9px
+        }
+
+        input[data-submenu-items]+label:before {
+            content: "\f107";
+            transition: all 250ms ease
+        }
+
+        input[data-submenu-items]:checked+label:before {
+            transform: rotate(180deg);
+            transition: all 250ms ease
+        }
+
+        .submenu-wrapper .menu-subitem {
+            height: 55px;
+            font-size: 12px;
+            line-height: 55px;
+            border-bottom: solid 1px transparent
+        }
+
+        .submenu-wrapper a i {
+            line-height: 55px
+        }
+
+        .submenu-wrapper .menu-subitem .fa-angle-right {
+            font-size: 8px;
+            margin-top: -1px
+        }
+
+        .submenu-wrapper a:first-child {
+            padding-top: 5px
+        }
+
+        .submenu-wrapper a:last-child {
+            padding-bottom: 5px
+        }
+
+        [data-submenu-items="2"]:checked~.submenu-wrapper {
+            height: 121px
+        }
+
+        [data-submenu-items="3"]:checked~.submenu-wrapper {
+            height: 185px
+        }
+
+        [data-submenu-items="4"]:checked~.submenu-wrapper {
+            height: 241px
+        }
+
+        [data-submenu-items="5"]:checked~.submenu-wrapper {
+            height: 296px
+        }
+
+        [data-submenu-items="6"]:checked~.submenu-wrapper {
+            height: 350px
+        }
+
+        [data-submenu-items="7"]:checked~.submenu-wrapper {
+            height: 405px
+        }
+
+        [data-submenu-items="8"]:checked~.submenu-wrapper {
+            height: 461px
+        }
+
+        [data-submenu-items="9"]:checked~.submenu-wrapper {
+            height: 506px
+        }
+
+        [data-submenu-items="10"]:checked~.submenu-wrapper {
+            height: 561px
+        }
+
+        table {
+            position: relative;
+            overflow: hidden;
+            padding: var(--j-space-s);
+            width: 100%;
+            max-width: 100%;
+            color: black;
+            text-align: center;
+            background: radial-gradient(#fff9f1, #e4c5a6);
+            border-collapse: collapse
+        }
+
+        caption,
+        thead {
+            background: #1a212a;
+            padding: var(--j-space-s);
+            font-weight: 700;
+            color: white;
+
+        }
+
+        th {
+            width: 100%;
+            text-align: center;
+        }
+
+        td,
+        th {
+            text-align: left;
+            padding: var(--j-space-s) 0 var(--j-space-s) 0
+        }
+
+        td,
+        th {
+            font-weight: 700;
+            border: 1px solid var(--j-link);
+            padding: var(--j-space-s)
+        }
+
+        .j-toc-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            background: #1a212a
+        }
+
+        .j-toc {
+            padding: var(--j-space);
+            background: var(--j-secondary)
+        }
+
+        figure {
+            margin: 0
+        }
+
+        figcaption {
+            font-size: .8rem
+        }
+
+        .ct-overall-score .ct-average-score {
+            font-size: 55px;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 10px
+        }
+
+        .ct-overall-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #fff;
+            border-radius: 2px;
+            background: var(--j-secondary)
+        }
+
+        .star-rating {
+            overflow: hidden;
+            position: relative;
+            width: 6em;
+            height: 1em;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1em;
+            letter-spacing: .4em;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden
+        }
+
+        .star-rating span {
+            overflow: hidden;
+            float: left;
+            top: 0;
+            left: 0;
+            position: absolute;
+            padding: 1em 0
+        }
+
+        .star-rating span:before {
+            content: '★★★★★';
+            top: 0;
+            left: 0;
+            position: absolute;
+            color: #fda256
+        }
+
+        .ct-score-label {
+            margin-top: .5em
+        }
+    </style>
+    <link rel="canonical" href="https://pelitanusantara.sch.id/">
+    <title>Ninjajago ⚡ Slot Online Gacor Gampang Menang 2023 Terpercaya</title>
+</head>
+
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "SLOT GACOR MODAL KECIL UNTUNG BESAR",
+            "description": "Dapatkan penawaran khusus hanya di Gacor77 dan dapatkan Jackpot terbesar di Indonesia",
+            "thumbnailUrl": "https://i.postimg.cc/QdpvmQ7y/mq3.webp",
+            "uploadDate": "2023-05-27T12:15:00+00:00",
+            "duration": "PT3M48S",
+            "embedUrl": "https://www.youtube.com/watch?v=S9Rhs15zl90",
+            "interactionCount": "1"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Ninjajago",
+            "alternateName": "Slot Gacor",
+            "url": "https://pelitanusantara.sch.id/",
+            "logo": "https://i.postimg.cc/s22Dv9Fc/gacor77-slot-online.webp",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "url": "https://direct.lc.chat/12661932/",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Game",
+            "name": "Slot Gacor Maxwin",
+            "author": {
+                "@type": "Person",
+                "name": "Ninjajago"
+            },
+            "image": "https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png",
+            "url": "https://pelitanusantara.sch.id/",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Slot Gacor"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "95",
+                "bestRating": "100",
+                "worstRating": "1",
+                "ratingCount": "1819520"
+            },
+            "inLanguage": "id"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Gacor77 : Gacor Slot Online Gampang Menang Mudah Maxwin Sempaksional No #1 Indonesia",
+            "url": "https://pelitanusantara.sch.id/",
+            "description": "Gacor77 merupakan provider slot online mudah menang dengan permainan slot gacor mudah maxwin dan terpercaya no.1 di Indonesia 2023.",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": "1",
+                        "item": {
+                            "@type": "WebSite",
+                            "@id": "https://pelitanusantara.sch.id/",
+                            "name": "Ninjajago"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": "2",
+                        "item": {
+                            "@type": "WebPage",
+                            "@id": "https://pelitanusantara.sch.id/index.php",
+                            "name": "Slot Gacor"
+                        }
+                    }
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Ninjajago",
+                "logo": {
+                    "@type": "imageObject",
+                    "url": "https://i.postimg.cc/yd3hkFSn/slotgacor77.webp"
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://pelitanusantara.sch.id/"
+            },
+            "headline": "Gacor77 : Gacor Slot Online Gampang Menang Mudah Maxwin Sempaksional No #1 Indonesia",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png",
+                "height": 538,
+                "width": 240
+            },
+            "datePublished": "2023-05-27T08:00:00+08:00",
+            "dateModified": "2023-05-27T09:21:00+08:00",
+            "author": {
+                "@type": "Person",
+                "name": "Ninjajago",
+                "url": "https://pelitanusantara.sch.id/"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Ninjajago",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://i.postimg.cc/yd3hkFSn/slotgacor77.webp",
+                    "width": 110,
+                    "height": 34
+                }
+            },
+            "description": "Gacor77 merupakan provider slot online mudah menang dengan permainan slot gacor mudah maxwin dan terpercaya no.1 di Indonesia 2023."
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "HowTo",
+            "name": "Tips Dan Trik Bermain Slot Gacor Jamin Jackpot",
+            "description": "Dalam bermain judi online apapun dibutuhkan keahlian mumpuni untuk bisa meraih kemenangan, termasuk taruhan slot online. Permainan slot online terkenal sebagai judi online paling acak dan susah untuk ditebak hasilnya. Walaupun begitu terdapat beberapa tips dan trik memperbesar peluang mendapatkan jackpot slot maxwin di situs judi slot online yang telah terbukti ampuh. Penasaran? Berikut caranya :",
+            "image": "https://i.postimg.cc/QdpvmQ7y/mq3.webp",
+            "totalTime": "PT5M",
+            "estimatedCost": {
+                "@type": "MonetaryAmount",
+                "currency": "IDR",
+                "value": "10000"
+            },
+            "supply": {
+                "@type": "HowToSupply",
+                "name": "Money"
+            },
+            "tool": {
+                "@type": "HowToTool",
+                "name": "Chrome Browser, Safari, Firefox, Opera Mini"
+            },
+            "step": [{
+                "@type": "HowToStep",
+                "text": "Judi slot online gacor resmi bisa kalian dapat dengan mendaftarkan diri kalian sebagai member Ninjajago resmi yang telah mengantongi beberapa lisensi remsi yang sudah mempunyai member yang mendapatkan jackpot maxwin setiap harinya.",
+                "image": "https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png",
+                "name": "Judi Slot Online Gacor Resmi",
+                "url": "https://pelitanusantara.sch.id/"
+            }, {
+                "@type": "HowToStep",
+                "text": "Cara mudah mendapatkan tingkat RTP dan Volatilitas dari mesin slot gacor adalah melakukan review dari beberapa pemain atau bergabung pada komunitas slot gacor mudah menang.",
+                "image": "https://i.postimg.cc/4dRp2Zw1/Whats-App-Image-2022-10-22-at-05-42-10.jpg",
+                "name": "Tips Mengetahui Mesin Slot Gacor",
+                "url": "https://pelitanusantara.sch.id/"
+            }, {
+                "@type": "HowToStep",
+                "text": "Ketahui untuk bisa mendapatkan bocoran slot gacor malam ini yakni, dengan cara mengetahui beberapa bocoran slot gacor dari situs slot online resmi Indonesia.",
+                "image": "https://i.postimg.cc/T1YfTLCY/Whats-App-Image-2022-10-22-at-05-40-31.jpg",
+                "name": "Slot Gacor Malam Ini",
+                "url": "https://pelitanusantara.sch.id/"
+            }, {
+                "@type": "HowToStep",
+                "text": "Setelah mendapatkan jam slot gacor hari ini, anda bisa menerapkan pola slot gacor gampang menang pada taruhan mesin slot yang kalian mainkan.",
+                "image": "https://i.postimg.cc/jSN004t4/Whats-App-Image-2022-10-22-at-05-40-54.jpg",
+                "name": "Pola Menang Situs Slot Gacor",
+                "url": "https://pelitanusantara.sch.id/"
+            }, {
+                "@type": "HowToStep",
+                "text": "Cara terakhir adalah jika Anda berhasil mendapatkan jackpot slot silahkan langsung melakukan withdraw total kemenangan yang didapatkan.",
+                "image": "https://i.postimg.cc/sx88bvLL/Whats-App-Image-2022-10-22-at-05-41-05.jpg",
+                "name": "Cara Withdraw",
+                "url": "https://pelitanusantara.sch.id/"
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "Apa perbedaan Slot Online dan Slot Gacor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Slot online hanya memberikan tingkat kemenangan sangat kecil di bandingkan dengan slot gacor yang memiliki tingkat kemenangan tinggi."
+            }
+          },{
+            "@type": "Question",
+            "name": "Bagaimana cara membedakan Slot Online dan Slot Gacor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cara membedakan cukup mudah, kamu hanya cukup melakukan tes deposit dan bermain slot dan nanti kamu bisa rasakan apakah mesin slot tersebut gacor atau tidak."
+            }
+          },{
+            "@type": "Question",
+            "name": "Apa saja metode pembayaran deposit Game Slot Gacor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenis metode pembayaran yang disediakan, yaitu :
+        
+        Transfer Bank : BCA, Mandiri, BNI, BRI, BSI, CIMB Niaga, Danamon.
+        Via Pulsa : Telkomsel.
+        E-Money : GoPay, OVO, Dana, LinkAja, SakuKu."
+            }
+          },{
+            "@type": "Question",
+            "name": "Apa rekomendasi terbaik Provider Slot Gacor yang tersedia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Slot Online Pragmatic Play
+        Slot Online Reel Kingdom
+        Slot Online Microgaming
+        Slot Online Toptrend Gaming
+        Slot Online Habanero
+        Slot Online Advant Play
+        Slot Online Spadegaming
+        Slot Online PG Soft
+        Slot Online Joker
+        Slot Online Playstar
+        Slot Online CQ9
+        Slot Online Slot88
+        Slot Online Mimi Gaming
+        Slot Online Yggdrasil
+        Slot Online BBN
+        Slot Online BNG"
+            }
+          },{
+            "@type": "Question",
+            "name": "Apa promo dan bonus menarik Slot Gacor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ada beberapa bonus menarik dari permainan slot gacor hari ini, seperti :
+        Bonus Freespin 30%
+        Bonus New Member
+        Welcome Bonus 50%
+        Bonus Deposit 5 Juta
+        Bonus Cashback Rollingan
+        Bonus Referral Hingga 15%
+        Lucky Wheels"
+            }
+          }]
+        }
+        </script>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-2"
+    data-amp-auto-lightbox-disable>
+    <header id="header" role="banner">
+        <div class="header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="https://pelitanusantara.sch.id/">
+                        <amp-img
+                            src="https://i.postimg.cc/c4Z0PcT7/logo-slot-ninjajago.png"
+                            alt="Ninjajago" width="300" height="70"
+                            class="amp-wp-enforced-sizes i-amphtml-layout-intrinsic i-amphtml-layout-size-defined"
+                            layout="intrinsic" i-amphtml-layout="intrinsic">
+                            <i-amphtml-sizer slot="i-amphtml-svc" class="i-amphtml-sizer">
+                                <img alt="" aria-hidden="true" class="i-amphtml-intrinsic-sizer" role="presentation"
+                                    src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9Ijk5IiB3aWR0aD0iMzAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==">
+                            </i-amphtml-sizer>
+                            <noscript>
+                                <img src="https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png"
+                                    alt="Ninjajago" width="600" height="200">
+                            </noscript>
+                        </amp-img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" id="toggle-menu">
+    <label class="toggle-menu-header" for="toggle-menu">
+        <em class="l1"></em>
+        <em class="l2"></em>
+        <em class="l3"></em>
+    </label>
+    <div id="menu-sidebar" class="j-menu menu-sidebar">
+        <div class="menu-scroll">
+            <br />
+            <a href="https://pelitanusantara.sch.id/" class="sidebar-logo"></a>
+            <a class="menu-subitem active-item" href="https://pelitanusantara.sch.id/" target="_self">
+                <svg class="w-6 h-6" fill="none" stroke="currentcolor" viewBox="0 0 24 24"
+                    xmlns="http://upforfifty.xyz/D">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                </svg>
+                <span>Home</span>
+            </a>
+            <a class="menu-subitem active-item" href="https://pelitanusantara.sch.id/" target="_self">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://upforfifty.xyz/D">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
+                    </path>
+                </svg>
+                <span>Daftar</span>
+            </a>
+            <a class="menu-subitem active-item" href="https://rebrand.ly/slotgacor77" target="_blank"
+                rel="noopener sponsored">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://upforfifty.xyz/D">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                    </path>
+                </svg>
+                </i>
+                <span>Login</span>
+                <a class="menu-subitem active-item" href="http://upforfifty.xyz/D" target="_blank"
+                    rel="noopener sponsored">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://upforfifty.xyz/D">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                        </path>
+                    </svg>
+                    <span>Promo</span>
+                </a>
+                <label class="menu-subitem" for="toggle-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://upforfifty.xyz/D">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    </i>
+                    <span>Close</span>
+                </label>
+                <em class="sidebar-copyright">2022 &copy; Ninjajago. <br />All Rights Reserved. </em>
+        </div>
+    </div>
+    <div class="sticky"></div>
+    <div id="container">
+        <div class="main">
+            <div class="module" id="slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="main-slide col-sm-12">
+                            <img style="width:100%;height:auto;" width="1800" height="800"
+                                alt="Ninjajago PROMO SLOT 100%"
+                                src="https://i.postimg.cc/BnZrkhKh/agen-slot-gacor.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module" id="user">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="menu-login-container">
+                                <ul id="menu-login" class="login-nav">
+                                    <li id="menu-item-20"
+                                        class="daftar menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
+                                        <a target="_blank" rel="nofollow"
+                                            href="http://upforfifty.xyz/D">LOGIN</a>
+                                    </li>
+                                    <li id="menu-item-21"
+                                        class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+                                        <a target="_blank" rel="nofollow"
+                                            href="http://upforfifty.xyz/D">DAFTAR</a>
+                                    </li>
+                                    <br>
+                                    <br>
+                                    <li id="menu-item-21"
+                                    class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+                                    <a target="_blank" rel="nofollow"
+                                        href="http://upforfifty.xyz/D">RTP Ninjajago</a>
+                                </li>
+                                <li id="menu-item-21"
+                                class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-21">
+                                <a target="_blank" rel="nofollow"
+                                    href="http://upforfifty.xyz/D">PROMOSI</a>
+                            </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module-big" id="news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="article" id="post-2">
+                                 <h1 itemprop="headline">Ninjajago ⚡ Slot Online Gacor Gampang Menang 2023 Terpercaya</h1>
+                <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                    <amp-img src="https://i.postimg.cc/43XWsS8h/provider.png" layout="intrinsic" width="1130" height="356" alt="Slot online"></amp-img>
+                    <meta itemprop="url" content="https://i.postimg.cc/43XWsS8h/provider.png">
+                    <meta itemprop="width" content="1130">
+                    <meta itemprop="height" content="356">
+                </div>
+
+                
+
+<div class="information">
+                    <table class="desc">
+                        <caption>Tentang Situs</caption>
+                        
+                        <p style="text-align: justify;"><a href="https://pelitanusantara.sch.id/">Ninjajago</a> merupakan situs slot Gacor 2023 terpercaya mudah bagi Maxwin yang menyediakan berbagai macam permainan slot resmi populer dan terlengkap seperti slot online, live casino, poker online, togel dan taruhan bola. Melalui slot 777, Anda dapat memainkan semua game slot terbaru hanya dengan 1 user ID melalui perangkat Anda dengan mengandalkan koneksi internet. Salah satu permainan yang paling dikenal masyarakat Indonesia di situs link slot Thai Gacor adalah slot online. Lalu kenapa banyak orang yang mencari permainan slot gacor dan mencoba mendaftar di situs slot online Ninjajago? Slot online merupakan salah satu permainan slot yang paling mudah dimainkan dan tidak memerlukan modal besar atau keahlian khusus untuk memasang taruhan. Banyak sekali situs slot online yang beredar saat ini karena masih dipercaya mampu membuat masyarakat awam mendadak kaya raya jika beruntung, maka dengan nama slot Gacor Maxwin, permainan slot online ini semakin dikenal karena jackpot yang bisa didapatkan. sangat besar dan tidak memilih pemain. Hanya situs slot Ninjajago yang menjamin kemenangan bagi para pemainnya, dengan mendaftarkan link alternatif slot 777 yang memiliki layanan online 24 jam dan pastinya tidak banyak situs slot Gacor lain yang memilikinya. Baca terus pembahasan lanjutan cara daftar, login dan juga tips bermain di situs slot gacor terpercaya 2023.</p>
+<h2 style="text-align: center;">Daftar Link Alternatif Situs Slot 777 Mudah Saat Ini</h2>
+<p style="text-align: justify;">Pemain slot harus lebih hati-hati dalam memilih situs slot online, karena tidak semua situs bisa dipercaya alias scam dan penipu. Untuk itu jika anda ingin mendaftar maka carilah link alternatif slot Ninjajago yang resmi agar anda bisa bermain game slot online dengan aman dan nyaman. Data pribadi pemain akan dijaga kerahasiaannya dan tidak akan disebarluaskan atau diperdagangkan kepada pihak lain. Jika anda mengalami kendala pada saat mendaftar dan login pada link alternatif slot 777, silahkan segera menghubungi customer service yang profesional dan ramah untuk membantu permasalahan sesuai kebutuhan anda. Lengkapi identitas anda sebelum mendaftar situs <a href="https://pelitanusantara.sch.id/">slot 777</a> seperti nama, telepon, email, nama akun, nomor rekening dan username yang mudah diingat ketika ingin login. Adanya link alternatif sangat memudahkan bagi para pemain slot online tidak perlu takut kehilangan akun judi onlinenya, cukup dengan mencari di mesin pencari terbesar dunia seperti Google dan mengetikkan kata kunci slot 777 dan akan muncul di layar perangkat anda. Slot online Ninjajago berisikan informasi jelas mengenai permainan slot gacor yang bekerjasama dengan beberapa provider slot ternama dunia dengan win rate tinggi yaitu pragmatic play, habanero, pg soft, slot88, joker123 dan masih banyak lagi. Ninjajago slot selalu mengupdate semua jenis permainan slot terbaik untuk dinikmati para pemain slot terbaru.</p>
+<h2 style="text-align: center;">Informasi Situs Slot Gacor 2023 Terpercaya</h2>
+<p style="text-align: justify;">Informasi mengenai permainan slot 777 akan kami berikan kepada para pemain baru maupun pemain lama yang sudah mendaftar di <a href="https://pelitanusantara.sch.id/">situs slot 777</a> sebagai landasan pengetahuan sebelum mencoba bermain. Tentu saja informasi tersebut tidak boleh diabaikan, apalagi bagi para pemain baru yang belum terlalu mengetahui apa itu permainan slot online Gacor. . Lihatlah tabel di bawah ini:</p>
+<table style="border-color: #ffffff; float: left;" border="1">
+<thead>
+<tr>
+<th colspan="3">Informasi Situs Slot Gacor Terbaik 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web Gacor</td>
+<td>Ninjajago</td>
+</tr>
+<tr>
+<td>Minimal Deposit</td>
+<td>25.000 IDR</td>
+</tr>
+<tr>
+<td>Metode Deposit</td>
+<td>Transfer Bank &amp; E-Money, QRIS</td>
+</tr>
+<tr>
+<td>Deposit E-wallet</td>
+<td>🟢 DANA, OVO, GOPAY, LinkAja, SAKUKU</td>
+</tr>
+<tr>
+<td>Game Slot Gacor</td>
+<td>Gates of Gatotkaca,🍭 Sweet Bonanza, Zeus:Ancient Fortunes, ⚡Gates of Olympus zeus</td>
+</tr>
+<tr>
+<td>Provider Slot Online</td>
+<td>Pragmatic Play, PGSOFT, Joker, Habanero, MicroGaming</td>
+</tr>
+<tr>
+<td>RTP Slot</td>
+<td>97.89%</td>
+</tr>
+</tbody>
+</table>
+<h3 style="text-align: center;">9 Daftar Situs Slot Online Provider Terbaik Gambang Menang Maxwin</h3>
+<p style="text-align: justify;"><a href="https://pelitanusantara.sch.id/">Situs slot Ninjajago</a> dan situs slot terpercaya Thai Gacor 2023 bekerja sama dengan beberapa penyedia situs slot resmi untuk membuat pemain melipatgandakan uang asli, daftar penyedia yang memiliki tingkat kemenangan tinggi dan mudah dimainkan untuk member baru dan lama.</p>
+<ul>
+<li style="text-align: justify;"><strong>Maxwin Pragmatic Mainkan Slot Gacor</strong></li>
+</ul>
+<p style="text-align: justify;">Provider pertama di peringkat teratas yang menjadi andalan para pecinta <a href="https://pelitanusantara.sch.id/">slot Gacor Maxwin</a> adalah Pragmatic Play, memiliki ratusan game slot Gacor dengan putaran winrate tertinggi mulai dari jackpot bagus, mega, luar biasa, sensasional dan Maxwin di Sweet Bonanza, Gate olympus, permata aztec, emas barat liar, megaways badak besar.</p>
+<ul>
+<li style="text-align: justify;"><strong>SLOT ONLINE PGSOFT</strong></li>
+</ul>
+<p style="text-align: justify;">Peringkat kedua sebagai penyedia situs <a href="https://pelitanusantara.sch.id/">slot online</a> yang mempunyai desain dan grafis terbaik, memanjakan setiap pemain yang mencoba permainan slot gacor yang mempunyai win rate dengan RTP 96% pada permainan mahjongways, crypto gold, wild bandito, garuda gems , Harimau Keberuntungan.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Online Habanero</strong></li>
+</ul>
+<p style="text-align: justify;"><a href="https://pelitanusantara.sch.id/">Provider slot online</a> ternama yang mempunyai permainan paling digemari para slotter yaitu Koi Gates, dengan kemunculan koi yang berturut-turut dapat menciptakan kemenangan ganda dan jackpot Maxwin yang tidak terduga. Peringkat ketiga dengan tingkat kemenangan RTP 96%.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Daring Microgaming</strong></li>
+</ul>
+<p style="text-align: justify;">Provider yang tak kalah menarik dan mudah dimainkan ini memiliki banyak permainan slot gacor dengan animasi menarik dan lucu dengan win rate menduduki peringkat keempat judi slot RTP sebesar 95%.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Online Joker123</strong></li>
+</ul>
+<p style="text-align: justify;">Kemunculannya pertama kali di Indonesia membuat para pecinta judi online berbondong-bondong mencoba permainan <a href="https://pelitanusantara.sch.id/">slot gacor</a> yang terdapat di dalamnya. Menurut informasi yang beredar, joker123 dibuat oleh anak bangsa Indonesia, bertemakan tradisional dan mudah dimainkan, win rate penyedia ini berkisar antara 95% hingga 96%.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot88 Online</strong></li>
+</ul>
+<p style="text-align: justify;"><a href="https://pelitanusantara.sch.id/">Slot88</a> disebut slot Gacor karena mudah dimainkan dan paling banyak dicari seperti penyedia slot online lainnya. Slot88 juga bisa dimainkan dengan menggunakan deposit pulsa tanpa potongan yang merupakan fasilitas untuk mencoba permainan slot gacor seperti: Ganesha, Great Blue, Golden Bear, God of Wealth.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Daring Playtech</strong></li>
+</ul>
+<p style="text-align: justify;">Tidak kalah dengan provider sebelumnya, game slot gacor yang tersedia di provider slot ini banyak diminati karena anti lag dan mudah diakses di semua perangkat. Tingkat kemenangan slot RTP adalah 97%, namun agak sulit bagi beberapa pemain yang tidak memiliki keterampilan untuk mencapainya.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Daring Onetouch</strong></li>
+</ul>
+<p style="text-align: justify;">Onetouch yang artinya 1 sentuhan, bagi <a href="https://pelitanusantara.sch.id/">pemain slot gacor</a> yang beruntung, hanya dengan 1 sentuhan jackpot Maxwin yang besar pasti akan jatuh ke tangan pemain yang beruntung. Ini memiliki sistem putaran yang adil bagi pemain yang mencoba permainan slot ini, tingkat kemenangan RTP 96% menanti Anda.</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Online AdvandPlay</strong></li>
+</ul>
+<p style="text-align: justify;">Penyedia slot online Advand play menang beruntun tanpa memilih pemain yang memainkan permainan slot gacor. Anda bisa mendapatkan jackpot mega, super, mayor, dan minor dengan syarat Anda bersabar menunggu giliran tiba di tempat Anda. Tingkat kemenangan RTP untuk slot ini adalah 99%</p>
+<ul>
+<li style="text-align: justify;"><strong>SLOT STREAM GAME ONLINE</strong></li>
+</ul>
+<p style="text-align: justify;">Flow Gaming adalah mitra permainan slot online utama di Asia. Informasi mengenai penyedia Flow Gaming tidak dibuka untuk umum, oleh karena itu slot online permanen ini hanya dapat ditemukan di perjudian online dan tentunya hanya di permainan slot.</p>
+<h3 style="text-align: center;">Keuntungan Bermain Slot Online di 777</h3>
+<p style="text-align: justify;">Situs <a href="https://pelitanusantara.sch.id/">slot online Ninjajago</a> dan slot Thailand memiliki banyak keuntungan bagi para pemainnya, mulai dari promosi bonus terlengkap dan turnamen yang diadakan setiap minggunya untuk pemain aktif slot online Ninjajago. Lalu apa saja manfaatnya, simak dibawah ini:</p>
+<ul>
+<li style="text-align: justify;"><strong>Bonus dan Promosi Terbesar</strong><br />Bonus yang diberikan kepada setiap pemain di slot Ninjajago tentunya sangat banyak, mulai dari bonus untuk pemain baru atau member baru yang baru bergabung, promosi member baru 100% bisa anda dapatkan di awal tanpa mengurangi modal deposit, setelah itu, jika slotter mania aktif bermain di <a href="https://pelitanusantara.sch.id/">agen slot 777</a> anda juga akan mendapatkan bonus mingguan serta bonus rollingan dan cashback yang akan dibagikan setiap minggunya.</li>
+<li style="text-align: justify;"><strong>Metode Deposit Terlengkap</strong><br />Jika para penjudi slot 777 ingin memasang taruhan menggunakan yang asli, kami memiliki berbagai metode transaksi yang akan memudahkan para slotter dalam bertaruh. Mulai dari deposit via transfer bank, deposit dana, deposit OVO, deposit Linkaja, bahkan yang terbaru menggunakan deposit pulsa tanpa potongan.</li>
+<li style="text-align: justify;"><strong>Memiliki Permainan Slot Online Terbaik</strong><br />Permainan yang ada di situs judi slot online Ninjajago sangat lengkap, ratusan hingga ribuan jenis slot bisa dicoba dan tentunya gacor dalam artian anda bisa mendapatkan uang tambahan jika memainkan putaran <a href="https://pelitanusantara.sch.id/">RTP slot 777</a> yang benar dan menurut info rekomendasi dari slotter yang sudah mencobanya. situs kami.</li>
+<li style="text-align: justify;"><strong>Cukup gunakan 1 ID pengguna</strong><br />Jika Anda suka bermain angka maka jenis judi ini sangat cocok untuk Anda. Hanya perlu menebak keluaran nomor togel atau toto yang berbasis di Hongkong, Singapura, Sydney atau Macau, Anda sudah bisa memenangkan togel ini dengan sempurna. Namun anda perlu memperhatikan situs judi togel tempat anda bermain.</li>
+<li><strong>Judi poker online 24 jam</strong><br />Hanya dengan login menggunakan 1 <a href="https://pelitanusantara.sch.id/">user ID slot Ninjajago</a>, pilihlah game judi online pilihan atau keanggotaan Anda yang dapat memberikan keberuntungan bagi Anda. Daftarkan diri Anda sekarang untuk memulai semua permainan judi online terbaik di dunia 777.</li>
+</ul>
+<h3 style="text-align: center;"><br />Cara Daftar dan Login Slot Online dengan Mudah</h3>
+<p style="text-align: justify;">Telah dibahas sebelumnya bahwa banyak sekali situs <a href="https://pelitanusantara.sch.id/">slot online 777</a> yang beredar saat ini, namun jangan sampai salah memilih tempat untuk mendaftarkan diri dan login ke situs penipu yang mengaku sebagai slot 777. Untuk memainkan slot online Ninjajago tentunya harus memiliki user ID terlebih dahulu, ikuti langkah-langkahnya dibawah ini.</p>
+<p style="text-align: justify;">Pilih situs slot Gacor 2023 yang terpercaya<br />Daftar dengan mengisi form seperti username, password, email, nama akun, nomor rekening sesuai.<br />Klik tombol konfirmasi dan ID akun Gacor Anda telah dibuat<br />Pilih opsi login dan masukkan nama pengguna yang Anda buat beserta kata sandinya.<br />Pilih menu deposit jika ingin bertaruh menggunakan uang asli<br />Setelah menyelesaikan langkah-langkah di atas, slot akun Gacor Anda telah dibuat dan coba login untuk mengonfirmasinya sekali lagi. Selamat bermain!</p>
+<h3 style="text-align: center;"><br />5 Daftar Ninjajago Judi Online Populer</h3>
+<p style="text-align: justify;">Perlu diketahui bahwa <a href="https://pelitanusantara.sch.id/">agen slot online 777</a> juga menyediakan berbagai jenis judi online selain slot game dan tentunya memberikan bonus jackpot besar dan kemenangan pasti untuk member setianya. Situs slot 777 menjamin permainan judi online yang disediakan akan membuat Anda puas dengan berbagai pilihan permainan dan tantangan yang menarik. Berikut ini merupakan game slot gacor terbaik dan paling banyak dicari selain game slot thailand, antara lain :</p>
+<ul>
+<li style="text-align: justify;"><strong>Slot Daring</strong></li>
+<li style="text-align: justify;"><strong>Sportsbook / Taruhan bola online</strong></li>
+<li style="text-align: justify;"><strong>Poker Daring</strong></li>
+<li style="text-align: justify;"><strong>Arkade</strong></li>
+<li style="text-align: justify;"><strong>Lotere Online</strong></li>
+</ul>
+<p style="text-align: justify;">Itulah penjelasan singkat jika Anda sedang mencari situs slot online 777 resmi terpercaya dengan sederet keunggulan dan berbagai jenis <a href="https://pelitanusantara.sch.id/">demo slot populer</a> yang saat ini paling banyak dicari di Indonesia. Jangan sampai salah dalam memilih slot Gacor Maxwin karena salah pilih dan resiko tidak membayar kemenangan bisa membuat Anda kehilangan uang dan berhenti memainkannya. Pilihlah situs slot 777 yang terpercaya dan terbukti membayar berapapun kemenangan pemainnya. Daftar dan Masuk sekarang. Selamat bermain!</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-footer">
+        <a href="https://pelitanusantara.sch.id/" data-active="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" height="25" width="25" viewBox="0 0 24 24"
+                xmlns="http://upforfifty.xyz/D">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                </path>
+            </svg>
+            <br>Beranda </a>
+        <a href="http://upforfifty.xyz/D" data-active="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" height="25" width="25" viewBox="0 0 24 24"
+                xmlns="http://upforfifty.xyz/D">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
+                </path>
+            </svg>
+            <br>Daftar </a>
+        <a href="http://upforfifty.xyz/D" data-active="false" title="Promotion">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" height="25" width="25" viewBox="0 0 24 24"
+                xmlns="http://upforfifty.xyz/D">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                </path>
+            </svg>
+            <br>Login </a>
+        <a href="https://pelitanusantara.sch.id/" title="Live Chat Ninjajago">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" height="25" width="25" viewBox="0 0 24 24"
+                xmlns="http://upforfifty.xyz/D">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                </path>
+            </svg>
+            <br>Promosi </a>
+    </div>
+    <footer id="footer" role="contentinfo">
+        <div class="footer">
+            <div class="copyright" id="copyright">
+                <div class="container">
+                    <a href="https://pelitanusantara.sch.id/">Ninjajago</a> ©2022. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
